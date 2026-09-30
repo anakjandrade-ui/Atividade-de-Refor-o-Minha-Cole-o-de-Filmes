@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #eef4fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+  }
+  
+  .aplicacao {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+  }
+  
+  h1 {
+    margin-top: 0;
+    color: #1557a0;
+  }
+  
+  .cadastro {
+    margin: 28px 0 18px;
+  }
+  
+  .cadastro label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+  }
+  
+  .linha {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #aebdd0;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 11px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1557a0;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background-color: #10467f;
+  }
+  
+  .mensagem {
+    padding: 13px;
+    border-radius: 8px;
+    background-color: #eef2f7;
+  }
+  
+  .sucesso {
+    background-color: #e9f8ef;
+    color: #17633a;
+  }
+  
+  .erro {
+    background-color: #ffecec;
+    color: #9d1c1c;
+  }
+  
+  .lista-filmes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .filme {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 14px;
+    border: 1px solid #cfd8e6;
+    border-radius: 9px;
+    background-color: #f8fafc;
+  }
+  
+  .filme.assistido .titulo-filme {
+    text-decoration: line-through;
+    color: #657184;
+  }
+  
+  .btn-status {
+    background-color: #1d7a46;
+  }
+  
+  .btn-status:hover {
+    background-color: #155c34;
+  }
+  
+  .btn-excluir {
+    background-color: #9d1c1c;
+  }
+  
+  .btn-excluir:hover {
+    background-color: #741515;
+  }
+  
+  @media (max-width: 650px) {
+    .linha {
+      flex-direction: column;
+    }
+  
+    .filme {
+      grid-template-columns: 1fr;
+    }
+  }

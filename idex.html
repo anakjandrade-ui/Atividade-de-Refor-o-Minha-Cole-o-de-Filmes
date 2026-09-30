@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Coleção de Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="aplicacao">
+    <h1>🎬 Minha Coleção de Filmes</h1>
+    <p>Cadastre filmes e acompanhe o que você já assistiu.</p>
+
+    <section class="cadastro">
+      <label for="input-titulo">Título do filme</label>
+
+      <div class="linha">
+        <input
+          id="input-titulo"
+          type="text"
+          placeholder="Ex.: Interestelar"
+        />
+
+        <button id="btn-adicionar" type="button">
+          Adicionar
+        </button>
+      </div>
+    </section>
+
+    <p id="mensagem" class="mensagem">
+      Aguardando um filme...
+    </p>
+
+    <section class="painel">
+      <h2>Filmes cadastrados</h2>
+
+      <ul id="lista-filmes" class="lista-filmes"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
